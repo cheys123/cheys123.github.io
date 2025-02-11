@@ -65,3 +65,76 @@ body {
 .social-buttons .linkedin { background-color: #0077b5; }
 .social-buttons .facebook { background-color: #3b5998; }
 .social-buttons .instagram { background-color: #e4405f; }
+
+/* New Styles */
+.header {
+    background: linear-gradient(90deg, #0077b5, #00aaff);
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.header p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.header .btn {
+    padding: 15px 30px;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.header .btn-primary {
+    background-color: #0077b5;
+    color: #fff;
+    border: none;
+}
+
+.header .btn-primary:hover {
+    background-color: #005f8a;
+    transform: scale(1.05);
+}
+
+.header .btn-outline-dark {
+    background-color: transparent;
+    color: #333;
+    border: 2px solid #333;
+}
+
+.header .btn-outline-dark:hover {
+    background-color: #333;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.profile {
+    position: relative;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.profile-img {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.dots-1, .dots-2, .dots-3, .dots-4 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: url('path/to/dots.svg') no-repeat center center;
+    background-size: contain;
+}
+
+.dots-1 { top: -20px; left: -20px; }
+.dots-2 { top: -20px; right: -20px; }
+.dots-3 { bottom: -20px; left: -20px; }
+.dots-4 { bottom: -20px; right: -20px; }

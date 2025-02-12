@@ -133,3 +133,32 @@ body {
     margin-top: 50px;
     font-size: 14px;
 }
+.navbar {
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar.fixed-top {
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+}
+
+.text-gradient {
+    background: linear-gradient(to right, #007bff, #6610f2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.profile-img {
+    max-width: 80%;
+    border-radius: 50%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #007bff, #6610f2);
+    border: none;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #6610f2, #007bff);
+}

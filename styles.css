@@ -1,67 +1,135 @@
+/* General Styling */
 body {
     font-family: 'Plus Jakarta Sans', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background: linear-gradient(135deg, #e0eafc, #cfdef3);
     color: #333;
 }
 
+/* Navigation Bar */
 .navigation {
     background-color: #333;
     color: #fff;
-    padding: 10px 0;
+    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
 }
 
 .navigation ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     list-style: none;
     padding: 0;
-    text-align: center;
     margin: 0;
+    gap: 20px;
 }
 
 .navigation ul li {
     display: inline;
-    margin: 0 15px;
 }
 
 .navigation ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s ease;
+    padding: 10px 15px;
+    transition: color 0.3s ease, background 0.3s ease;
+    border-radius: 5px;
 }
 
 .navigation ul li a:hover {
-    color: #0077b5;
+    color: #fff;
+    background-color: #0077b5;
 }
 
+/* Main Content */
 .container {
+    max-width: 900px;
+    margin: 100px auto 50px;
     padding: 20px;
     text-align: center;
 }
 
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Skills Section */
 .skills {
-    margin: 20px 0;
+    margin: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
 }
 
 .skills div {
-    margin: 10px 0;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 150px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.skills div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Social Buttons */
+.social-buttons {
+    margin: 30px 0;
 }
 
 .social-buttons a {
+    display: inline-block;
     margin: 0 10px;
     text-decoration: none;
     color: #fff;
     padding: 10px 20px;
     border-radius: 5px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .social-buttons a:hover {
     transform: scale(1.1);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
 }
 
 .social-buttons .github { background-color: #333; }
 .social-buttons .linkedin { background-color: #0077b5; }
 .social-buttons .facebook { background-color: #3b5998; }
 .social-buttons .instagram { background-color: #e4405f; }
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+    margin-top: 50px;
+    font-size: 14px;
+}

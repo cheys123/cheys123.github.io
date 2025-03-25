@@ -40,7 +40,8 @@
             .work-sample img { max-width: 100%; height: auto; border-radius: 10px; margin-bottom: 15px; }
             .testimonial-section { background-color: #f8f9fa; padding: 60px 0; }
             .testimonial-section h2 { font-size: 2.5rem; margin-bottom: 40px; }
-            .testimonial { margin-bottom: 20px; }
+            .testimonial { margin-bottom: 20px; display: flex; align-items: center; }
+            .testimonial img { border-radius: 50%; width: 60px; height: 60px; margin-right: 15px; }
             .testimonial p { font-size: 1.1rem; font-style: italic; }
             .testimonial .author { font-weight: bold; }
             .links-section { padding: 60px 0; }
@@ -138,31 +139,45 @@
                     <div class="text-center mb-5">
                         <h2 class="display-5 fw-bolder">Work Samples</h2>
                     </div>
-                    <div class="row gx-5 justify-content-center">
-                        <div class="col-lg-8">
-                            <div class="work-sample">
-                                <img src="Car.png" alt="Project 4 Image">
-                                <h3>Project 1: Order Blitz</h3>
-                                <p>The vision behind OrderBlitz, a revolutionary website application designed to transform the food delivery industry.</p>
-                                <a href="https://orderblitz.netlify.app/" class="btn btn-outline-primary btn-sm">View on GitHub</a>
+                    <div class="row gx-5">
+                        <div class="col-lg-6 mb-4">
+                            <div class="card h-100 shadow border-0">
+                                <img class="card-img-top" src="Car.png" alt="Project 1 Image">
+                                <div class="card-body p-4">
+                                    <h5 class="card-title">Project 1: Order Blitz</h5>
+                                    <p class="card-text">The vision behind OrderBlitz, a revolutionary website application designed to transform the food delivery industry.</p>
+                                    <a href="https://orderblitz.netlify.app/" class="btn btn-outline-primary btn-sm">View on GitHub</a>
+                                </div>
                             </div>
-                            <div class="work-sample">
-                                <img src="Proj2.png" alt="Project 2 Image">
-                                <h3>Project 2: Task Management App</h3>
-                                <p>A web application for managing tasks and projects, built with HTML, CSS, and JavaScript.</p>
-                                <a href="https://taskfloapp.netlify.app/" class="btn btn-outline-primary btn-sm">View on GitHub</a>
+                        </div>
+                        <div class="col-lg-6 mb-4">
+                            <div class="card h-100 shadow border-0">
+                                <img class="card-img-top" src="Proj2.png" alt="Project 2 Image">
+                                <div class="card-body p-4">
+                                    <h5 class="card-title">Project 2: Task Management App</h5>
+                                    <p class="card-text">A web application for managing tasks and projects, built with HTML, CSS, and JavaScript.</p>
+                                    <a href="https://taskfloapp.netlify.app/" class="btn btn-outline-primary btn-sm">View on GitHub</a>
+                                </div>
                             </div>
-                            <div class="work-sample">
-                                <img src="Coffe.png" alt="Project 3 Image">
-                                <h3>Project 3: Blog Website</h3>
-                                <p>A blog website built with WordPress, featuring various articles and a clean, responsive design.</p>
-                                <a href="https://cheyanbynygel2801.wordpress.com/" class="btn btn-outline-primary btn-sm">View Live</a>
+                        </div>
+                        <div class="col-lg-6 mb-4">
+                            <div class="card h-100 shadow border-0">
+                                <img class="card-img-top" src="Coffe.png" alt="Project 3 Image">
+                                <div class="card-body p-4">
+                                    <h5 class="card-title">Project 3: Blog Website</h5>
+                                    <p class="card-text">A blog website built with WordPress, featuring various articles and a clean, responsive design.</p>
+                                    <a href="https://cheyanbynygel2801.wordpress.com/" class="btn btn-outline-primary btn-sm">View Live</a>
+                                </div>
                             </div>
-                            <div class="work-sample">
-                                <img src="Projc.png" alt="Project 4 Image">
-                                <h3>Project 4: Portfolio Website</h3>
-                                <p>A personal portfolio website showcasing my skills, projects, and certifications.</p>
-                                <a href="https://cheys123.github.io" class="btn btn-outline-primary btn-sm">View on GitHub</a>
+                        </div>
+                        <div class="col-lg-6 mb-4">
+                            <div class="card h-100 shadow border-0">
+                                <img class="card-img-top" src="Projc.png" alt="Project 4 Image">
+                                <div class="card-body p-4">
+                                    <h5 class="card-title">Project 4: Portfolio Website</h5>
+                                    <p class="card-text">A personal portfolio website showcasing my skills, projects, and certifications.</p>
+                                    <a href="https://cheys123.github.io" class="btn btn-outline-primary btn-sm">View on GitHub</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -175,13 +190,26 @@
                     </div>
                     <div class="row gx-5 justify-content-center">
                         <div class="col-lg-8">
-                            <div class="testimonial">
-                                <p>"Cheyanby is an exceptional web developer. His attention to detail and dedication to creating high-quality websites is truly impressive."</p>
-                                <p class="author">- Meljohn Reyes Code Developer</p>
+                            <div class="testimonial d-flex align-items-center mb-4">
+                                <img src="Melj.png" alt="Meljohn Reyes" class="rounded-circle me-3" style="width: 60px; height: 60px;">
+                                <div>
+                                    <p>"Cheyanby is an exceptional web developer. His attention to detail and dedication to creating high-quality websites is truly impressive."</p>
+                                    <p class="author">- Meljohn Reyes Code Developer</p>
+                                </div>
                             </div>
-                            <div class="testimonial">
-                                <p>"Working with Cheyanby was a great experience. He delivered the project on time and exceeded our expectations."</p>
-                                <p class="author">- Allen Apostol Graduated IT</p>
+                            <div class="testimonial d-flex align-items-center mb-4">
+                                <img src="Allen.png" alt="Allen Apostol" class="rounded-circle me-3" style="width: 60px; height: 60px;">
+                                <div>
+                                    <p>"Working with Cheyanby was a great experience. He delivered the project on time and exceeded our expectations."</p>
+                                    <p class="author">- Allen Apostol Graduated IT</p>
+                                </div>
+                            </div>
+                            <div class="testimonial d-flex align-items-center mb-4">
+                                <img src="jaz.png" alt="Jazper Garcia" class="rounded-circle me-3" style="width: 60px; height: 60px;">
+                                <div>
+                                    <p>"His problem-solving skills and creativity set him apart. Cheyanby brings fresh ideas and innovation to every project."</p>
+                                    <p class="author">- Jazper Garcia Fellow Developer</p>
+                                </div>
                             </div>
                         </div>
                     </div>
